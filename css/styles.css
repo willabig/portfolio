@@ -1,0 +1,119 @@
+/* UTILITIES ------------------------------------------------------------------------------------------ */
+
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Colors */
+:root {
+  --light: #B087DE; 
+  --white: #f7f4f4;
+  --gray: #cec9d5 ;
+  --dark: #540fa2;
+}
+
+/* screen reader only element */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* NAVIGATION ------------------------------------------------------------------------------------------ */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--dark);
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    padding: 20px 40px;
+    color: var(--white);
+}
+
+nav h1 {
+    color: var(--white);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--white);
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px var(--gray);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--gray);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* HEADER ------------------------------------------------------------------------------------------ */
+header h2 {
+    font-family: cursive;
+    font-style: italic;
+}
+
+/* MAIN ------------------------------------------------------------------------------------------ */
+
+/* HOME ------------------------------------------------------------------------------------------ */
+
+/* ABOUT ------------------------------------------------------------------------------------------ */
+
+/* BIOGRAPHY */
+
+/* EDUCATION */
+
+/* EXPERIENCE */
+
+/* PORTFOLIO ------------------------------------------------------------------------------------------ */
+
+/* SKILLS */
+
+/* PROJECTS */
+
+/* CERTIFICATIONS */
+
+/* CONTACT ------------------------------------------------------------------------------------------ */
+
+/* FOOTER ------------------------------------------------------------------------------------------ */
+footer {
+    background-color: var(--light);
+    color: var(--dark);
+}
